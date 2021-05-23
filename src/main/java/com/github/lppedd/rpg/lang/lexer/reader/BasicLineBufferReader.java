@@ -1,6 +1,6 @@
 package com.github.lppedd.rpg.lang.lexer.reader;
 
-import com.github.lppedd.rpg.lang.extensions.CharSequenceExtensions;
+import com.github.lppedd.rpg.extensions.CharSequenceExtensions;
 import lombok.experimental.ExtensionMethod;
 import org.jetbrains.annotations.NotNull;
 

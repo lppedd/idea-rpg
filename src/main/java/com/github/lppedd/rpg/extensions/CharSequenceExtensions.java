@@ -1,4 +1,4 @@
-package com.github.lppedd.rpg.lang.extensions;
+package com.github.lppedd.rpg.extensions;
 
 /**
  * @author Edoardo Luppi

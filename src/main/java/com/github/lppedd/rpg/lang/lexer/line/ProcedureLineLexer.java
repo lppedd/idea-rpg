@@ -1,6 +1,6 @@
 package com.github.lppedd.rpg.lang.lexer.line;
 
-import com.github.lppedd.rpg.lang.extensions.CharSequenceExtensions;
+import com.github.lppedd.rpg.extensions.CharSequenceExtensions;
 import com.github.lppedd.rpg.lang.lexer.token.BlankTokenLexer;
 import com.github.lppedd.rpg.lang.lexer.token.CommentTokenLexer;
 import com.github.lppedd.rpg.lang.lexer.token.IdentifierTokenLexer;
