@@ -1,0 +1,35 @@
+<idea-plugin>
+  <id>com.github.lppedd.idea-rpg</id>
+  <name>RPG</name>
+  <vendor email="lp.edoardo@gmail.com">Edoardo Luppi</vendor>
+
+  <description><![CDATA[
+    A plugin supporting the IBM RPG language.
+  ]]></description>
+
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <fileType
+        name="RPG file"
+        implementationClass="com.github.lppedd.rpg.lang.RpgFileType"
+        fieldName="INSTANCE"
+        language="RPG"
+        extensions="rpg"
+    />
+    <lang.parserDefinition
+        language="RPG"
+        implementationClass="com.github.lppedd.rpg.lang.parser.RpgParserDefinition"
+    />
+    <lang.syntaxHighlighter
+        language="RPG"
+        implementationClass="com.github.lppedd.rpg.lang.syntax.RpgSyntaxHighlighter"
+    />
+
+    <completion.contributor
+        language="RPG"
+        implementationClass="com.github.lppedd.rpg.completion.RpgCompletionContributor"
+        order="first"
+    />
+  </extensions>
+</idea-plugin>
