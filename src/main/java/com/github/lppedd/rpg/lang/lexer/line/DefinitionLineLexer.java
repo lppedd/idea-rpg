@@ -1,6 +1,7 @@
 package com.github.lppedd.rpg.lang.lexer.line;
 
 import com.github.lppedd.rpg.extensions.CharSequenceExtensions;
+import com.github.lppedd.rpg.lang.lexer.token.BlankTokenLexer;
 import com.github.lppedd.rpg.lang.lexer.token.CommentTokenLexer;
 import com.github.lppedd.rpg.lang.lexer.token.IdentifierTokenLexer;
 import com.github.lppedd.rpg.lang.lexer.token.IntegerLiteralTokenLexer;
@@ -33,8 +34,9 @@ public class DefinitionLineLexer implements LineLexer {
       new KeywordTokenLexer(23, 25),        // Definition type
       new IntegerLiteralTokenLexer(25, 32), // From
       new IntegerLiteralTokenLexer(32, 39), // To/Length
-      new KeywordTokenLexer(39, 41),        // Internal data type
-      new IntegerLiteralTokenLexer(41, 43), // Decimal positions
+      new KeywordTokenLexer(39, 40),        // Internal data type
+      new IntegerLiteralTokenLexer(40, 42), // Decimal positions
+      new BlankTokenLexer(42, 43),
       new KeywordsTokenLexer(43, 80),       // Keywords
       new CommentTokenLexer(80, Integer.MAX_VALUE)
   };
